@@ -7,11 +7,11 @@
   font-family: "Roboto", sans-serif;
 }
 
-/* 
+/****************************** 
 
 NAV 
 
-*/
+*******************************/
 
 nav {
   height: 80px;
@@ -49,7 +49,14 @@ li {
 #landing {
   background-color: rgba(115, 66, 214, 0.1);
 }
-.middle__bar {
-  padding-right: 15px;
-  border-right: 2px solid black;
+a {
+  justify-content: space-between;
+  padding: 5px;
+  text-decoration: none;
+}
+.menus__bar {
+  border-left: 1px solid black;
+}
+a:hover {
+  text-decoration: underline;
 }
