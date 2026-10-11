@@ -48,7 +48,7 @@ li {
 .nav__bar {
   visibility: hidden;
 }
-img{
+img {
   width: 100%;
   height: 100%;
 }
@@ -129,6 +129,76 @@ header {
 
 /****************************** 
 
+           larg screen 768 max-width
+
+*******************************/
+@media (max-width: 768px) {
+
+  .icon {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 20px 0 20px 0;
+    box-shadow: 0 10px 35px;
+  }
+  .book__ratings {
+    color: #c54f65;
+  }
+  .book__price {
+    text-decoration: line-through;
+    visibility: ca;
+  }
+
+  .book__price {
+    margin-bottom: 10px;
+  }
+
+  h4 {
+    margin-top: 10px;
+  }
+  .section__title {
+    text-align: center;
+    padding-bottom: 26px;
+  }
+
+  .icon {
+    z-index: 1;
+    margin-top: 16px;
+  }
+  #features {
+    margin-top: 80px;
+    background-color: #dfd6de;
+    padding-top: 80px;
+  }
+
+  #highlights::after {
+    background-image: url("assets/wave.svg");
+    content: "";
+    position: absolute;
+    width: 101vw;
+    height: 12vw;
+    margin-top: -12px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateY(100%) rotate(180deg);
+    z-index: 1;
+  }
+  #highlights::before {
+    background-image: url("assets/wave.svg");
+    content: "";
+    position: absolute;
+    width: 101vw;
+    height: 12vw;
+    margin-top: -91px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .feature__title {
+    z-index: 1;
+  }
+}
+
+/****************************** 
+
            SMALL SCREEN
 
 *******************************/
@@ -151,7 +221,7 @@ header {
     position: absolute;
     width: 101vw;
     height: 12vw;
-    margin-top: -462px;
+    margin-top: 14px;
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -161,10 +231,9 @@ header {
     position: absolute;
     width: 101vw;
     height: 12vw;
-    margin-top: 330px;
+    margin-top: -65px;
     background-size: cover;
     background-repeat: no-repeat;
-    transform: translateY(100%) rotate(180deg);
   }
   #features {
     background-color: #e9dae6;
