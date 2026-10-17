@@ -92,6 +92,14 @@ button {
 button:active {
   transform: translateY(1px);
 }
+.btn__footer{
+  background-color: #7342d6;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  border: none;
+  margin: 0 auto;
+}
 .btn {
   background-color: #7342d6;
   color: white;
@@ -209,7 +217,6 @@ p {
 .book {
   width: 25%;
   padding: 24px;
-  
 }
 .book_img {
   max-width: 380px;
@@ -238,5 +245,50 @@ p {
 }
 
 /*=======================================
-                LATES BOOKS
+               EXPLORE MORE BOOKS
  =======================================*/
+#explore {
+  display: flex;
+  justify-content: center;
+  background-color: #dcd6e8;
+ 
+}
+
+.explore__morebooks h2 {
+  justify-content: center;
+}
+/*=======================================
+               FOOTER
+ =======================================*/
+.footer__container--wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer {
+  background-color: black;
+}
+.footer__link {
+  margin-left: 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  padding-left: 8px;
+}
+.footer__link:hover {
+  text-decoration: underline;
+}
+.footer__link--bar {
+  border-left: 1px solid black;
+  padding-left: 12px;
+}
+.logo__footer {
+  width: 160px;
+  filter: grayscale(1) invert(1);
+}
+.footer__copy--right {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
