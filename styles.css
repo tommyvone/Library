@@ -55,7 +55,7 @@ li {
   text-decoration: underline;
 }
 .bar {
-  border-left: 1px solid black;
+  border-left: 1px solid blueviolet;
   padding-left: 12px;
 }
 header {
@@ -92,7 +92,7 @@ button {
 button:active {
   transform: translateY(1px);
 }
-.btn__footer{
+.btn__footer {
   background-color: #7342d6;
   color: white;
   padding: 12px 24px;
@@ -247,11 +247,12 @@ p {
 /*=======================================
                EXPLORE MORE BOOKS
  =======================================*/
-#explore {
+.explore__book--wraper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   background-color: #dcd6e8;
- 
+  margin: 0 auto;
 }
 
 .explore__morebooks h2 {
@@ -290,5 +291,52 @@ footer {
   color: white;
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.btn__footer {
+  display: flex;
+}
+.footer__link--bar {
+  border-left: 1px solid white;
+  padding-left: 12px;
+}
+
+/*=======================================
+             Table and up 
+             min-worth: 768px
+ =======================================*/
+@media (max-width: 768px) {
+  #highlights::after {
+    background-image: url(./assets/wave.svg);
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 0;
+    width: 101vw;
+    height: 12vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateY(100%) rotate(180deg);
+    margin-top: 289px;
+  }
+}
+
+@media (max-width: 550px) {
+  #highlights::after {
+    background-image: url(./assets/wave.svg);
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 0;
+    width: 101vw;
+    height: 12vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateY(100%) rotate(180deg);
+    margin-top: 343px;
+  }
+  .book {
+  width:50%;
+  padding: 24px;
+}
 }
